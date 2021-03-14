@@ -1,17 +1,23 @@
 import React from 'react'
-/*import {Route, Link, Switch} from 'react-router-dom'*/
+import {Link} from 'react-router-dom'
 import './navbar.css'
 
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <p className="navbar_logo">STRUNJE-TRADE</p>
+        <Link to={'/'} className="navbarLogo"> STRUNJE-TRADE </Link>
+            
 
-            <div className="nav_links">
-                <a href="">Link1</a>
-                <a href="">Link1</a>
-                <a href="">Link1</a>
-            </div>
+            <ul className="navLinks">
+                <div className="burgerMenu">
+                    <div className="burger"></div>
+                </div>
+                
+                <li><Link to={'/o_nama'} className="navLink"> O NAMA </Link></li>
+                <li><Link to={'/raspored_odvoza'} className="navLink">RASPORED ODVOZA</Link></li>
+                <li><Link to={'/cjenik_usluga'} className="navLink">CJENIK USLUGA</Link></li>
+                <li><Link to={'/kontakt'} className="navLink">KONTAKT</Link></li>
+            </ul>
             
 
         </nav>
