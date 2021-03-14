@@ -15,7 +15,7 @@ const Landing = () => {
                 Poduzeće za skupljanje neopasnog otpada</p>
             </div>
             <div className="imageContainer">
-                <Trash className="landingImage"/>
+                {/*<Trash className="landingImage"/>*/}
             </div>
         </div>
     )
